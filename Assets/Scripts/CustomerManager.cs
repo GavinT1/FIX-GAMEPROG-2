@@ -51,7 +51,7 @@ public class CustomerManager : MonoBehaviour
     public void OnQuitButton()
 {
     Debug.Log("Quit button pressed.");
-    Application.Quit(); // Closes the game
+    Application.Quit(); 
 }
 
     public void OnMainMenuButton()
@@ -170,7 +170,7 @@ System.Collections.IEnumerator AnimateScoreThenMoney(TMP_Text scoreText, int fin
         {
             currentScore = newScore;
             scoreText.text = currentScore.ToString();
-            if (moneyTickSound != null) moneyTickSound.Play(); // Play tick sound
+            if (moneyTickSound != null) moneyTickSound.Play(); 
         }
         yield return null;
     }
